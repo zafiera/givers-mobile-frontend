@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        <p class="main-header" (click)="navigateToHome()">Giver</p>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding class="bg-image add-margin">
+    <ion-card class="semi-opaque-card">
+  
+      <ion-card-header>
+        <span class="login-header">Login</span>
+      </ion-card-header>
+  
+      <ion-card-content>
+  
+        <ion-list>
+  
+          <ion-item class="remove-background">
+            <ion-label floating color="black">Email</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+  
+          <ion-item class="remove-background">
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+  
+        </ion-list>
+  
+          <button ion-button color="dark" class="sign-up-button" (click)="navigateToHome()">Sign in</button>
+          <button ion-button color="dark" class="register-button"  (click)="navigateToRegister()">Register</button>
+  
+      </ion-card-content>
+  
+    </ion-card>
+  </ion-content>
+  
