@@ -1,7 +1,33 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title>
-        <p class="main-header">Giver</p>
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <ion-title>
+      <p class="main-header">Locate shelter</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <img class="map" src="http://www.capetownetc.com/wp-content/uploads/2017/09/Screen-Shot-2017-09-13-at-10.35.40-AM-1024x533.png"
+    alt="">
+
+              <!-- need to make the search bar funtional -->
+  <ion-searchbar></ion-searchbar>
+  <ion-list>
+  </ion-list>
+
+    <ion-list>
+  <div text-center>
+  <div *ngFor="let Shelter of shelters">
+    <p> {{Shelter.image}}
+      <p>
+        <p>
+          <b>{{Shelter.name}}</b>
+        </p>
+        <p>{{Shelter.address}}</p>
+        <p>{{Shelter.note}}</p>
+       
+        <button ion-button color="dark" outline (click)="navigateToShelter1list()">shelter</button>
+        <button ion-button color="dark" outline (click)="navigateToDonate()">donate</button>
+        <button ion-button color="dark" outline (click)="navigateToLogin()">login</button>
+</div>
